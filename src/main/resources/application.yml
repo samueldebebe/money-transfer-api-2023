@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/transfer
+    username: sysuser
+    password: admin@123
+    sql:
+      init:
+        mode: always
+  jpa:
+    #Hibernate is an ORM (Object relation mapper)
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        # which is not mandatory but enables the generated script postgress customized
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+
+
+
+
+
